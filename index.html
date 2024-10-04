@@ -4,25 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pricing table</title>
+    <!-- <link rel="stylesheet" href="./assets/css/normalize.css"> -->
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css"
+    />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div id="main">
-      <div class="grid wide">
-        <div class="row">
-          <div class="nav">
-            <div class="col l-3">
-              <div class="item-logo">
-                <img
-                  class="item-logo-img"
-                  src="./assets/img/the_gem.png"
-                  alt="The gem"
-                />
-              </div>
+      <div class="header">
+        <div class="wide">
+          <div class="header__content">
+            <div class="item-logo">
+              <img
+                class="item-logo-img"
+                src="./assets/img/the_gem.png"
+                alt="The gem"
+              />
             </div>
-            <div class="col l-7">
-              <div class="navigation">
+            <div class="header__navbar">
+              <div class="header__navbar-menu">
                 <ul class="nav-text">
                   <li class="nav-text-item">HOME</li>
                   <li class="nav-text-item">PAGES</li>
@@ -33,8 +36,6 @@
                   <li class="nav-text-item">ELEMENTS</li>
                 </ul>
               </div>
-            </div>
-            <div class="col l-2">
               <div class="nav-icon">
                 <i>
                   <img src="./assets/img/america.png" alt="america" />
@@ -45,15 +46,18 @@
                 <i>
                   <img src="./assets/img/bag.png" alt="bag" />
                 </i>
-                <i>
-                  <img src="./assets/img/icon.png" alt="icon" />
-                </i>
+                <div class="triangle"></div>
+                <span class="nav-icon-blue">2</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div id="slider">
+      <div id="slider">
+        <div class="icon-custom-right"><i class="ti-arrow-right"></i></div>
+        <div class="icon-custom-left"><i class="ti-arrow-left"></i></div>
+        <div class="wide">
           <div class="row no-gutters">
             <div class="col l-12">
               <div class="slide--img">
@@ -95,8 +99,197 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div id="content"></div>
+      <div class="content">
+        <div class="wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="content__paragraph">
+                <div class="content__paragraph__header">LOREM IPSUM</div>
+                <div class="content__paragraph__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum. Sed ut perspiciatis unde omnis
+                  iste natus error sit voluptatem accusantium doloremque
+                  laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta
+                  sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                  aspernatur aut odit aut fugit, sed quia consequuntur magni
+                  dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                  quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  consectetur, adipisci velit, sed quia non numquam eius modi
+                  tempora incidunt ut labore et dolore magnam aliquam quaerat
+                  voluptatem. Nemo enim ipsam voluptatem quia voluptas sit
+                  aspernatur aut odit aut fugit
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row item__list">
+            <div class="col l-4 m-4 c-12">
+              <div class="content__beginner">
+                <div class="content__beginner-head">
+                  <div class="content__head--text">BEGINNER</div>
+                  <div class="content__head--subtext">
+                    <span class="text-number">$99</span>
+                    <span class="text-month">Per month</span>
+                  </div>
+                </div>
+                <div class="content__beginnner--content">
+                  <div class="content--item-head">
+                    <div class="content__text">Subtitle goes here</div>
+                    <p class="content__paragraph">
+                      Subtitle second line goes here lorem ipsum *
+                    </p>
+                  </div>
+                  <ul class="content__list__item">
+                    <li class="content__item__odd">Drop out ramen hustle</li>
+                    <li class="content__item__even">Coworking viral landing</li>
+                    <li class="content__item__odd">Crush revenue traction</li>
+                    <li class="content__item__even">
+                      User base minimum viable
+                    </li>
+                    <li class="content__item__odd">Lorem ipsum dolor</li>
+                  </ul>
+                </div>
+                <div class="content__btn">
+                  <button class="btn__item">ORDER</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4 m-4 c-12">
+              <div class="content__advanced">
+                <div class="content__beginner-head">
+                  <div class="content__head--text">ADVANCED</div>
+                  <div class="content__head--subtext">
+                    <span class="text-number">$199</span>
+                    <span class="text-month">Per month</span>
+                  </div>
+                  <div class="circle">NEW</div>
+                </div>
+                <div class="content__beginnner--content">
+                  <div class="content--item-head">
+                    <div class="content__text">Subtitle goes here</div>
+                    <p class="content__paragraph">
+                      Subtitle second line goes here lorem ipsum *
+                    </p>
+                  </div>
+                  <ul class="content__list__item">
+                    <li class="content__item__odd">Drop out ramen hustle</li>
+                    <li class="content__item__even">Coworking viral landing</li>
+                    <li class="content__item__odd">Crush revenue traction</li>
+                    <li class="content__item__even">
+                      User base minimum viable
+                    </li>
+                    <li class="content__item__odd">Lorem ipsum dolor</li>
+                  </ul>
+                </div>
+                <div class="content__btn">
+                  <button class="btn__item">ORDER</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4 m-4 c-12">
+              <div class="content__ulimate">
+                <div class="content__beginner-head">
+                  <div class="content__head--text">ULTIMATE</div>
+                  <div class="content__head--subtext">
+                    <span class="text-number">$299</span>
+                    <span class="text-month">Per month</span>
+                  </div>
+                </div>
+                <div class="content__beginnner--content">
+                  <div class="content--item-head">
+                    <div class="content__text">Subtitle goes here</div>
+                    <p class="content__paragraph">
+                      Subtitle second line goes here lorem ipsum *
+                    </p>
+                  </div>
+                  <ul class="content__list__item">
+                    <li class="content__item__odd">Drop out ramen hustle</li>
+                    <li class="content__item__even">Coworking viral landing</li>
+                    <li class="content__item__odd">Crush revenue traction</li>
+                    <li class="content__item__even">
+                      User base minimum viable
+                    </li>
+                    <li class="content__item__odd">Lorem ipsum dolor</li>
+                  </ul>
+                </div>
+                <div class="content__btn">
+                  <button class="btn__item">ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__text__adblock">
+        <div class="wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="content__paragraph">
+                <div class="content__sword_img">
+                  <img class="img_word" src="./assets/img/sword_icon.png" alt="sword_icon">
+                </div>
+                <div class="content__paragraph__adblock">AD BLOCK</div>
+                <div class="content__paragraph__text_adblock">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                </div>
+                <div class="btn">
+                  <button class="btn--item">PURCHASE NOW</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer__before">
+          <div class="wide">
+            <div class="row">
+              <div class="col l-3 m-3 c-12 ">
+                <div class="footer__col__img_head">
+                  <img src="./assets/img/the_gem_footer.png" alt="the gem footer">
+                </div>
+                <p class="footer__paragraph">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio</p>
+                <div class="footer_title">CONTACT</div>
+                <div class="footer__contact">
+                  <div>
+                    <div>
+                      <i class="ti-location-pin"></i>Address:
+                    </div>
+                    <div>908 New Hampshire Avenue Northwest #100, Washington, DC
+                      20037, United States</div>
+                  </div>
+                  <div>
+                    <i class="ti-headphone-alt"></i>Phone:  +1 916-875-2235
+                  </div>
+                  <div>
+                    <i class="ti-receipt"></i>Fax: +1 916-875-2235
+                  </div>
+                  <div>
+                    <i class="ti-email"></i>Email: info@domain.ltd
+                  </div>
+                  <div>
+                    <i class="ti-world"></i>Website: www.codex-themes.com
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__after"></div>
       </div>
     </div>
   </body>

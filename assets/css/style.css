@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #main {
@@ -180,10 +181,10 @@
   height: 0;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-right: 9px solid #09a0b6; /* Màu tam giác */
+  border-right: 9px solid #09a0b6; 
   position: absolute;
   top: 20;
-  left: 94px; /* Đặt tam giác sát cạnh trái của hình chữ nhật */
+  left: 94px; 
 }
 
 .nav-icon {
@@ -209,8 +210,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: height 2s, transform 2s; /* Chỉ thay đổi chiều cao */
-  transform-origin: top; /* Cố định đáy */
+  transition: height 2s, transform 2s; 
+  transform-origin: top; 
 }
 
 .content__beginner-head:hover {
@@ -330,7 +331,6 @@
   border-radius: 3px;
   background-color: #ffffff;
   font-size: 16px;
-  line-height: 40px;
   letter-spacing: 0.8px;
 }
 .btn__item:hover {
@@ -396,7 +396,7 @@
 
 .content__text__adblock {
   opacity: 0.851;
-  height: 1172px;
+  height: 974px;
   background-color: #494b58;
 }
 
@@ -415,7 +415,7 @@ div i.ti-arrow-right {
 
 .icon-custom-right {
   position: absolute;
-  top: 310px;
+  top: 45%;
   width: 72px;
   height: 72px;
   right: 0;
@@ -433,7 +433,7 @@ div i.ti-arrow-right {
 
 .icon-custom-left {
   position: absolute;
-  top: 310px;
+  top: 45%;
   width: 72px;
   height: 72px;
   left: 0;
@@ -482,8 +482,9 @@ div i.ti-arrow-left {
   font-family: "Source Sans Pro";
 }
 
+
+
 .footer__before {
-  height: 900px;
   background-color: #212331;
 }
 .footer__after {
@@ -496,15 +497,223 @@ div i.ti-arrow-left {
 }
 
 .footer__paragraph {
+  padding: 46px 0;
   color: #94a4af;
+  line-height: 1.5;
 }
 
 .footer_title {
+  padding: 10px 0;
   color: #94a4af;
+  margin: 5px 0;
+  font-weight: 700;
+  color: #feffff;
+  font-size: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-
+/* .footer__unoder-list-item{
+  display: flex;
+  align-items: center;
+} */
+.footer__col__img_head {
+  margin: 5px 0;
+}
 @media (max-width: 500px) {
   .slide-text-item {
     font-size: 20px;
   }
+}
+
+.footer__before-item {
+  padding: 134px 15px;
+}
+
+.footer__contact-address {
+}
+hr {
+  border: 1px dashed #4f576a;
+}
+
+.footer__text {
+  line-height: 1.3;
+  padding: 5px 0;
+}
+
+.footer__contact-list-item {
+  margin: 15px 0;
+  padding: 5px 0;
+}
+
+.footer__item {
+  padding: 0 10px 0 0;
+}
+
+.footer__icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #99a9b5;
+}
+
+.footer__color {
+  color: #94a4af;
+}
+
+.footer__icon-text {
+  margin: 15px 0;
+}
+
+.footer__icon {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.footer__description {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .fa-circle{
+  font-size: 0.4em;
+  color: #0992a8;
+}
+
+.footer__useful-links{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+
+
+.footer__useful-links .fa-circle{
+  margin: 0 5px 0 0;
+  padding: 0 10px 0 0;
+}
+input {
+  width: 100%;
+  background-color: #181828;
+  color: #424352;
+  border: 1px solid #424352;
+}
+.input__item-user{
+  position: relative;
+}
+.input__item-user::after {
+  position: absolute;
+  top:15px;
+  right: 10px;
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  color:#323544;
+}
+
+.input__item-email{
+  position: relative;
+}
+
+.input__item-email::after {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  color:#323544;
+}
+.input__name {
+  padding: 15px 0 15px 15px;
+}
+
+.input__email {
+  padding: 15px 0 15px 15px;
+}
+
+.input__message {
+  padding: 15px 0 60px 15px;
+}
+
+.input__submit {
+  padding: 15px 0 15px 0;
+  color: #99a9b5;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+
+.footer__list-item-square{
+  display: flex;
+}
+
+.footer_circle-item{
+  width: 15px;
+  height: 15px;
+  background-color: #394050;
+  border-radius: 50%;
+  border: none;
+  margin: 20px 10px;
+  padding: 5px;
+}
+
+.footer_circle-item:hover{
+  background-color: #99a9b5;
+}
+
+.footer__circle-group{
+  display: flex;
+  justify-content: center;
+}
+.item-square{
+  padding: 40px;
+  margin: 5px;
+}
+
+.gray--light{
+  background-color: #828e97;
+}
+
+.gray--medium{
+  background-color: #5c6973;
+}
+
+.gray--dark{
+  background-color: #4b565d;
+}
+
+.footer__text-newsletter{
+  color: #92a1ad;
+}
+
+.input__email__dress{
+  padding: 15px 0 15px 15px;
+  border: 3px solid #394050;
+  /* border: none; */
+}
+
+.input__email__dress::after{
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  color:#323544;
+}
+
+.fa-chevron-right{
+  font-size: 2em;
+  color: #93a2ae;
+  background-color: #394050;
+  padding: 10px;
+}
+
+.input__newsletter{
+  display: flex;
+}
+
+.text-item{
+  color:#00bcd4;
+  margin: 5px 10px 5px 0;
 }

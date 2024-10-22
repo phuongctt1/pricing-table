@@ -21,21 +21,21 @@
       <div class="header">
         <div class="wide">
           <div class="header__container">
-            <div class="header__item-logo">
+            <div class="header__logo">
               <img
-                class="header__item-logo-img"
+                class="header__logo-img"
                 src="./assets/img/the_gem.png"
                 alt="The gem"
               />
-              <span class="header__logo">THEGEM</span>
+              <span class="header__logo-text">THEGEM</span>
             </div>
             <div class="header__navbar">
               <div class="header__navbar__menu">
                 <input type="checkbox" id="toggle-menu" class="toggle-menu" />
-                <label for="toggle-menu" class="header__menu">
+                <label for="toggle-menu" class="navbar__icon-menu">
                   <i class="fa-solid fa-bars"></i>
                 </label>
-                <ul class="header__navbar__menu__items">
+                <ul class="header__navbar-list">
                   <li class="header__navbar-item">HOME</li>
                   <li class="header__navbar-item active">PAGES</li>
                   <li class="header__navbar-item">BLOG</li>
@@ -49,7 +49,7 @@
               <div class="nav-icon">
                 <i>
                   <img
-                    class="nav-icon__america"
+                    class="navbar___icon-language"
                     src="./assets/img/america.png"
                     alt="america"
                   />
@@ -59,14 +59,13 @@
                 </i>
                 <i>
                   <img
-                    class="nav-icon__bag"
+                    class="navbar___icon-cart"
                     src="./assets/img/bag.png"
                     alt="bag"
                   />
                 </i>
 
-                <div class="triangle"></div>
-                <span class="nav-icon-blue">2</span>
+                <div class="navbar__icon-cart--count">2</div>
               </div>
             </div>
           </div>
@@ -91,9 +90,9 @@
                     alt="menu img"
                   />
                 </div>
-                <div class="content__slider__text">
-                  <span class="content__slider__text-before">PRICING</span>
-                  <span class="content__slider__text-after">TABLES</span>
+                <div class="slider__title">
+                  <span class="slider__title-before">PRICING</span>
+                  <span class="slider__title-after">TABLES</span>
                 </div>
                 <div class="content__slider__paragraph">
                   <p class="content__slider__paragraph__text">
@@ -115,10 +114,10 @@
             </div>
             <div class="row no-gutters content__slider__radios">
               <div class="col l-12">
-                <div class="content__slider__radios__list-item">
-                  <span class="radios-item"></span>
-                  <span class="radios-item"></span>
-                  <span class="radios-item"></span>
+                <div class="slider__radios-list">
+                  <span class="slider__radios-item"></span>
+                  <span class="slider__radios-item"></span>
+                  <span class="slider__radios-item"></span>
                 </div>
               </div>
             </div>
@@ -129,12 +128,12 @@
           <div class="wide">
             <div class="row">
               <div class="col l-12 m-12 c-12">
-                <div class="content__table__paragraph-header">
+                <div class="table__title-first">
                   <div>
-                    <span class="content__paragraph__header--before"
+                    <span class="table__title--before"
                       >LOREM</span
                     >
-                    <span class="content__paragraph__header--after">IPSUM</span>
+                    <span class="table__title--after">IPSUM</span>
                   </div>
 
                   <div class="content__paragraph__text">
@@ -163,116 +162,117 @@
             </div>
             <div class="row item__list">
               <div class="col l-4 m-12 c-12">
-                <div class="content__table__items">
-                  <div class="content__beginner-head">
-                    <div class="content__head--text">BEGINNER</div>
-                    <div class="content__head--subtext">
-                      <span class="text-number">$99</span>
-                      <span class="text-month">Per month</span>
+                <div class="table__item">
+                  <div class="table__header">
+                    <div class="table__title">BEGINNER</div>
+                    <div class="table__price">
+                      <span class="table__amount">$99</span>
+                      <span class="table__duration">Per month</span>
                     </div>
                   </div>
-                  <div class="content__beginnner--content">
-                    <div class="content--item-head">
-                      <div class="content__text">Subtitle goes here</div>
-                      <p class="content__paragraph">
+                  <div class="table__content">
+                    <div class="table__details">
+                      <div class="table__subtitle">Subtitle goes here</div>
+                      <p class="table__description">
                         Subtitle second line goes here lorem ipsum *
                       </p>
                     </div>
-                    <ul class="content__list__item">
-                      <li class="content__item__odd">Drop out ramen hustle</li>
-                      <li class="content__item__even">
+                    <ul class="table__list__item">
+                      <li >Drop out ramen hustle</li>
+                      <li >
                         Coworking viral landing
                       </li>
-                      <li class="content__item__odd decoration">
+                      <li class="table__decoration">
                         Crush revenue traction
                       </li>
-                      <li class="content__item__even decoration">
+                      <li class="table__decoration">
                         User base minimum viable
                       </li>
-                      <li class="content__item__odd decoration">
+                      <li class="table__decoration">
                         Lorem ipsum dolor
                       </li>
                     </ul>
-                  </div>
-                  <div class="content__btn">
-                    <button class="btn__item">
-                      <i class="fa-solid fa-caret-right"></i>ORDER
-                    </button>
+                    <div class="table__btn">
+                      <button class="btn__item">
+                        <i class="fa-solid fa-caret-right"></i>ORDER
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div class="col l-4 m-12 c-12">
-                <div class="content__table__items">
-                  <div class="content__beginner-head">
-                    <div class="content__head--text">ADVANCED</div>
-                    <div class="content__head--subtext">
-                      <span class="text-number">$199</span>
-                      <span class="text-month">Per month</span>
+                <div class="table__item">
+                  <div class="table__header">
+                    <div class="table__title">ADVANCED</div>
+                    <div class="table__price">
+                      <span class="table__amount">$199</span>
+                      <span class="table__duration">Per month</span>
                     </div>
                     <div class="circle">NEW</div>
                   </div>
-                  <div class="content__beginnner--content">
-                    <div class="content--item-head">
-                      <div class="content__text">Subtitle goes here</div>
-                      <p class="content__paragraph">
+                  <div class="table__content">
+                    <div class="table__details">
+                      <div class="table__subtitle">Subtitle goes here</div>
+                      <p class="table__description">\
                         Subtitle second line goes here lorem ipsum *
                       </p>
                     </div>
-                    <ul class="content__list__item">
-                      <li class="content__item__odd">Drop out ramen hustle</li>
-                      <li class="content__item__even">
+                    <ul class="table__list__item">
+                      <li >Drop out ramen hustle</li>
+                      <li >
                         Coworking viral landing
                       </li>
-                      <li class="content__item__odd">Crush revenue traction</li>
-                      <li class="content__item__even decoration">
+                      <li >Crush revenue traction</li>
+                      <li class="table__decoration">
                         User base minimum viable
                       </li>
-                      <li class="content__item__odd decoration">
+                      <li class="table__decoration">
                         Lorem ipsum dolor
                       </li>
                     </ul>
+                    <div class="table__btn">
+                      <button class="btn__item">
+                        <i class="fa-solid fa-caret-right"></i>ORDER
+                      </button>
+                    </div>
                   </div>
-                  <div class="content__btn">
-                    <button class="btn__item">
-                      <i class="fa-solid fa-caret-right"></i>ORDER
-                    </button>
-                  </div>
+
                 </div>
               </div>
 
               <div class="col l-4 m-12 c-12">
-                <div class="content__table__items">
-                  <div class="content__beginner-head">
-                    <div class="content__head--text">ULTIMATE</div>
-                    <div class="content__head--subtext">
-                      <span class="text-number">$299</span>
-                      <span class="text-month">Per month</span>
+                <div class="table__item">
+                  <div class="table__header">
+                    <div class="table__title">ULTIMATE</div>
+                    <div class="table__price">
+                      <span class="table__amount">$299</span>
+                      <span class="table__duration">Per month</span>
                     </div>
                   </div>
-                  <div class="content__beginnner--content">
-                    <div class="content--item-head">
-                      <div class="content__text">Subtitle goes here</div>
-                      <p class="content__paragraph">
+                  <div class="table__content">
+                    <div class="table__details">
+                      <div class="table__subtitle">Subtitle goes here</div>
+                      <p class="table__description">
                         Subtitle second line goes here lorem ipsum *
                       </p>
                     </div>
-                    <ul class="content__list__item">
-                      <li class="content__item__odd">Drop out ramen hustle</li>
-                      <li class="content__item__even">
+                    <ul class="table__list__item">
+                      <li >Drop out ramen hustle</li>
+                      <li >
                         Coworking viral landing
                       </li>
-                      <li class="content__item__odd">Crush revenue traction</li>
-                      <li class="content__item__even">
+                      <li >Crush revenue traction</li>
+                      <li >
                         User base minimum viable
                       </li>
-                      <li class="content__item__odd">Lorem ipsum dolor</li>
+                      <li >Lorem ipsum dolor</li>
                     </ul>
-                  </div>
-                  <div class="content__btn">
-                    <button class="btn__item">
-                      <i class="fa-solid fa-caret-right"></i>ORDER
-                    </button>
+                    <div class="table__btn">
+                      <button class="btn__item">
+                        <i class="fa-solid fa-caret-right"></i>ORDER
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

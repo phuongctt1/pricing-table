@@ -3,6 +3,9 @@
   .toggle-menu {
     display: none;
   }
+  .navbar__icon-cart--count::before{
+    left: -8px;
+  }
 }
 /* mini PC */
 @media (min-width: 1024px) and (max-width: 1239px) {
@@ -10,19 +13,21 @@
     padding: 34px;
   }
   .header__navbar-item {
-    padding: 5px 5px;
+    padding: 5px;
   }
-  .triangle {
-    left: 94px;
-  }
+
   .header__navbar__menu {
     margin: 0 30px 0 5px;
+  }
+
+  .navbar__icon-cart--count::before{
+    left: -8px;
   }
 }
 .toggle-menu {
   display: none !important;
 }
-.header__menu {
+.navbar__icon-menu {
   display: none;
 }
 
@@ -39,7 +44,7 @@
   .toggle-menu {
     opacity: 0;
   }
-  .header__menu {
+  .navbar__icon-menu {
     display: block;
   }
 
@@ -49,9 +54,6 @@
     gap: 10px;
   }
 
-  .header__navbar__menu__items {
-    display: none;
-  }
 
   .header__navbar {
     display: flex;
@@ -62,8 +64,8 @@
     order: -1;
   }
 
-  .header__menu {
-    color: #ffffff;
+  .navbar__icon-menu {
+    color: var(--white-color);
     font-size: 24px;
     cursor: pointer;
     display: inline-block;
@@ -77,18 +79,18 @@
   }
 
   .header__navbar-item.active {
-    color: #ffffff;
+    color: var(--white-color);
     padding: 5px 15px;
   }
 
-  .header__navbar__menu__items {
+  .header__navbar-list {
     display: none;
     position: absolute;
-    right: 30px;
+    right: 0px;
     flex-direction: column;
     background-color: #333;
-    width: 22%;
-    align-items: flex-start;
+    width: 100%;
+    align-items: flex-end;
     margin-top: 10px;
   }
 
@@ -100,17 +102,16 @@
     text-align: center;
   }
 
-  #toggle-menu:checked ~ .header__navbar__menu__items {
-    display: flex;
+  #toggle-menu:checked ~ .header__navbar-list {
+    display: block;
   }
 
-  .triangle,
+
   .nav-icon-blue {
     display: none;
   }
-  .nav-icon__america,
-  .nav-icon__bag,
-  .triangle,
+  .navbar___icon-language,
+  .navbar___icon-cart,
   .nav-icon-blue {
     margin: 0 5px;
   }
@@ -127,11 +128,11 @@
     margin: 60px 0 20px 0;
   }
 
-  .content__slider__text-before {
+  .slider__title-before {
     font-size: 60px;
   }
 
-  .content__slider__text-after {
+  .slider__title-after {
     font-size: 60px;
   }
 
@@ -150,6 +151,10 @@
   .btn{
     margin: 20px 0 40px 0;
   }
+
+  .navbar__icon-cart--count::before {
+    left: -8px;
+  }
 }
 
 /*mobie*/
@@ -157,7 +162,7 @@
   .toggle-menu {
     opacity: 0;
   }
-  .header__menu {
+  .navbar__icon-menu {
     display: block;
   }
 
@@ -167,11 +172,11 @@
     gap: 10px;
   }
 
-  .header__navbar__menu__items {
+  .header__navbar-list {
     display: none;
   }
 
-  .header__logo {
+  .header__logo-text {
     display: none;
   }
 
@@ -184,7 +189,7 @@
     order: -1;
   }
 
-  .header__menu {
+  .navbar__icon-menu {
     color: #ffffff;
     font-size: 24px;
     cursor: pointer;
@@ -203,14 +208,14 @@
     padding: 5px 15px;
   }
 
-  .header__navbar__menu__items {
+  .header__navbar-list {
     display: none;
     position: absolute;
-    right: 30px;
+    right: 0px;
     flex-direction: column;
     background-color: #333;
-    width: 22%;
-    align-items: flex-start;
+    width: 100%;
+    align-items: flex-end;
     margin-top: 10px;
   }
 
@@ -222,18 +227,17 @@
     text-align: center;
   }
 
-  #toggle-menu:checked ~ .header__navbar__menu__items {
-    display: flex;
+  #toggle-menu:checked ~ .header__navbar-list {
+    display: block;
   }
 
-  .triangle,
+
   .nav-icon-blue {
     display: none;
   }
 
-  .nav-icon__america,
-  .nav-icon__bag,
-  .triangle,
+  .navbar___icon-language,
+  .navbar___icon-cart,
   .nav-icon-blue {
     margin: 0 5px;
   }
@@ -265,11 +269,11 @@
     margin: 0;
   }
 
-  .content__slider__text-before {
+  .slider__title-before {
     font-size: 50px;
   }
 
-  .content__slider__text-after {
+  .slider__title-after {
     font-size: 50px;
   }
 
@@ -293,20 +297,20 @@
     width: 70px;
   }
 
-  .content__paragraph__header--before {
+  .table__title--before {
     font-size: 50px;
   }
 
-  .content__paragraph__header--after {
+  .table__title--after {
     font-size: 50px;
   }
 
-  .content__table__paragraph-header {
+  .table__title {
     padding: 0;
   }
 
   .content__paragraph__text {
-    padding: 30px 0;
+    padding: 30px 0 80px 0;
     margin: 15px 0;
   }
 
@@ -319,9 +323,9 @@
     font-size: 30px;
   }
 
-  .content__beginner-head {
+  /* .content__beginner-head {
     padding: 30px 20px;
-  }
+  } */
 
   .content--item-head {
     padding: 10px 0;
@@ -373,7 +377,5 @@
     font-weight: 600;
   }
 
-  .header__navbar__menu__items{
-    width: 34%;
-  }
+
 }

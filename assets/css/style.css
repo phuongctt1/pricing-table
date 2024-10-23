@@ -45,9 +45,10 @@
   font-size: 14px;
 }
 
-.header__navbar-item .active {
+ .header__navbar-item.active {
   color: var(--white-color);
   border-color: var(--white-color);
+  padding: 5px 15px;
 }
 
 .header__navbar-item:hover {
@@ -426,7 +427,7 @@
   text-align: center;
 }
 
-.content__paragraph__text {
+.table__paragraph {
   padding: 50px 0;
   margin: 30px 0;
   text-align: justify;

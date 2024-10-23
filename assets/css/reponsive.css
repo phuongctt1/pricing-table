@@ -3,10 +3,8 @@
   .toggle-menu {
     display: none;
   }
-  .navbar__icon-cart--count::before{
-    left: -8px;
-  }
 }
+
 /* mini PC */
 @media (min-width: 1024px) and (max-width: 1239px) {
   .item-square {
@@ -16,19 +14,12 @@
     padding: 5px;
   }
 
-  .header__navbar__menu {
-    margin: 0 30px 0 5px;
-  }
-
-  .navbar__icon-cart--count::before{
+  .order::before{
     left: -8px;
   }
 }
 .toggle-menu {
   display: none !important;
-}
-.navbar__icon-menu {
-  display: none;
 }
 
 /*tablet*/
@@ -60,22 +51,13 @@
     align-items: center;
   }
 
-  .header__navbar .nav-icon {
+  .header__navbar .navbar__icon {
     order: -1;
-  }
-
-  .navbar__icon-menu {
-    color: var(--white-color);
-    font-size: 24px;
-    cursor: pointer;
-    display: inline-block;
-    text-align: right;
   }
 
   .header__navbar__menu {
     margin: 0;
     padding: 0;
-    margin-bottom: 10px;
   }
 
   .header__navbar-item.active {
@@ -120,12 +102,12 @@
     text-align: center;
   }
 
-  .footer__after__icon{
+  .footer__social{
     justify-content: center;
   }
 
   .space{
-    margin: 60px 0 20px 0;
+    margin: 60px 0 20px;
   }
 
   .slider__title-before {
@@ -136,24 +118,28 @@
     font-size: 60px;
   }
 
-  .content__paragraph__adblock {
+  .adblock__paragraph-title {
     font-size: 70px;
   }
 
-  .img_word{
-    margin: 170px 0 0 0;
+  .adblock__img {
+    margin-top: 170px;
   }
-  .content__paragraph__text_adblock{
+  .adblock__paragraph-text{
     padding: 40px 20px;
-    margin: 5px 0 40px 0;
+    margin: 5px 0 40px;
   }
 
   .btn{
     margin: 20px 0 40px 0;
   }
 
-  .navbar__icon-cart--count::before {
+  .order::before {
     left: -8px;
+  }
+
+  .navbar__icon {
+    gap: 3px;
   }
 }
 
@@ -166,9 +152,17 @@
     display: block;
   }
 
-  .nav-icon {
+  .slider__arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slider__arrow i {
+    font-size: 20px;
+  }
+
+  .navbar__icon {
     display: inline-block;
-    margin-right: 20px;
     gap: 10px;
   }
 
@@ -185,22 +179,13 @@
     align-items: center;
   }
 
-  .header__navbar .nav-icon {
+  .header__navbar .navbar__icon {
     order: -1;
-  }
-
-  .navbar__icon-menu {
-    color: #ffffff;
-    font-size: 24px;
-    cursor: pointer;
-    display: inline-block;
-    text-align: right;
   }
 
   .header__navbar__menu {
     margin: 0;
     padding: 0;
-    margin-bottom: 10px;
   }
 
   .header__navbar-item.active {
@@ -230,7 +215,6 @@
   #toggle-menu:checked ~ .header__navbar-list {
     display: block;
   }
-
 
   .nav-icon-blue {
     display: none;
@@ -250,11 +234,11 @@
     text-align: center;
   }
 
-  .footer__after__icon {
+  .footer__social {
     justify-content: center;
   }
 
-  .footer__after__infor-item {
+  .footer__after__info-item {
     padding: 10px;
   }
 
@@ -262,7 +246,7 @@
     padding: 60px 0;
   }
 
-  .footer_title {
+  .footer__title {
     margin: 35px 0 20px 0;
   }
   .header__item-logo-img {
@@ -277,7 +261,7 @@
     font-size: 50px;
   }
 
-  .content__slider__paragraph__text {
+  .slider__paragraph-text {
     font-size: 16px;
   }
 
@@ -286,15 +270,7 @@
     font-size: 17px;
   }
   .btn {
-    margin: 10px 0 10px 0;
-  }
-
-  .content__slider__img {
-    line-height: 150px;
-  }
-
-  .content__slider__img__menu {
-    width: 70px;
+    margin: 10px 0;
   }
 
   .table__title--before {
@@ -310,7 +286,7 @@
   }
 
   .content__paragraph__text {
-    padding: 30px 0 80px 0;
+    padding: 30px 0 80px;
     margin: 15px 0;
   }
 
@@ -323,10 +299,6 @@
     font-size: 30px;
   }
 
-  /* .content__beginner-head {
-    padding: 30px 20px;
-  } */
-
   .content--item-head {
     padding: 10px 0;
     margin: 5px 0;
@@ -337,45 +309,32 @@
     margin: 20px 0;
   }
 
-  .content__paragraph__adblock {
+  .adblock__paragraph-title {
     font-size: 50px;
   }
 
-  .content__paragraph__text_adblock {
+  .adblock__paragraph-text {
     font-size: 16px;
     padding: 10px;
-    margin: 20px 0 50px 0;
+    margin: 20px 0 50px;
   }
 
-  .img_word {
-    margin: 150px 0 10px 0;
+  .adblock__img {
+    margin: 150px 0 10px;
   }
 
   .footer__circle-group {
     margin-right: 124px;
   }
 
-  .icon-arrow-left {
-    width: 30px;
-    height: 30px;
-  }
-
-  div i.fa-arrow-left{
-    font-size: 20px;
-  }
-
-  .icon-arrow-right{
-    width: 30px;
-    height: 30px;
-  }
-
-  div i.fa-arrow-right{
-    font-size: 20px;
-  }
   .btn-item{
     font-size: 16px;
     font-weight: 600;
   }
 
-
+}
+@media (max-width: 500px) {
+  .slide-text-item {
+    font-size: 20px;
+  }
 }

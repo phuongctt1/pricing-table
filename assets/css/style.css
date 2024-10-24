@@ -37,7 +37,7 @@
 }
 
 .header__navbar-item {
-  color: #6d7885;
+  color: var(--primary-color);
   border: 2px solid transparent;
   padding: 5px 15px;
   margin: 0 10px;
@@ -45,14 +45,14 @@
   font-size: 14px;
 }
 
- .header__navbar-item.active {
+.header__navbar-item.active {
   color: var(--white-color);
   border-color: var(--white-color);
   padding: 5px 15px;
 }
 
 .header__navbar-item:hover {
-  color: #09a0b6;
+  color: var(--blue-color);
 }
 
 .navbar__icon {
@@ -132,8 +132,8 @@
 }
 
 .btn-item:hover {
-  color: #09a0b6;
-  border: 3px solid #09a0b6;
+  color: var(--blue-color);
+  border: 3px solid var(--blue-color);
 }
 
 .slider__radios-list {
@@ -154,7 +154,7 @@
 }
 
 .slider__radios-item:hover {
-  background-color: #09a0b6;
+  background-color: var(--blue-color);
 }
 
 .header {
@@ -208,7 +208,7 @@
 
 .navbar__icon-cart--count {
   color: var(--white-color);
-  background-color: #09a0b6;
+  background-color: var(--blue-color);
   width: 24px;
   height: 18px;
   display: inline-block;
@@ -223,7 +223,7 @@
   content: "";
   border-top: 9.5px solid transparent;
   border-bottom: 9.5px solid transparent;
-  border-right: 9.5px solid #09a0b6;
+  border-right: 9.5px solid var(--blue-color);
   position: absolute;
   z-index: 200;
   left: -8px;
@@ -235,8 +235,8 @@
   left: 0;
   width: 100%;
   height: 150px;
-  background-color: #393d50;
-  border: 1px solid #000000;
+  background-color: var(--dark-gray-color);
+  border: 1px solid var(--black-color);
   border-bottom: none;
   display: flex;
   flex-direction: column;
@@ -273,8 +273,8 @@
 }
 
 .table__content {
-  border: 1px solid #000000;
-  border-bottom: top;
+  border: 1px solid var(--black-color);
+  border-top: none;
 }
 
 .table__amount {
@@ -319,7 +319,7 @@
   font-size: 14px;
   line-height: 25px;
   text-align: center;
-  color: #99a9b5;
+  color: var(--primary-color);
 }
 
 .table__list-item {
@@ -336,8 +336,8 @@
 
 .table__list-item li:nth-child(odd) {
   height: 60px;
-  background-color: #f4f6f7;
-  color: #90969a;
+  background-color: var(--gray-lighter-color);
+  color: var(--primary-color);
   font-size: 16px;
   text-align: center;
   line-height: 60px;
@@ -348,7 +348,7 @@
   font-size: 16px;
   text-align: center;
   line-height: 60px;
-  color: #90969a;
+  color: var(--primary-color);
 }
 
 .table__btn {
@@ -375,7 +375,7 @@
 .btn-triangle {
   border-top: 9.5px solid transparent;
   border-bottom: 9.5px solid transparent;
-  border-right: 9.5px solid #09a0b6;
+  border-right: 9.5px solid var(--blue-color);
 }
 .btn__item:hover {
   background-color: var(--blue-color);
@@ -383,7 +383,7 @@
 }
 
 .content__advanced {
-  border: 1px solid #000000;
+  border: 1px solid var(--black-color);
   margin: 40px 0;
 }
 
@@ -410,7 +410,7 @@
   letter-spacing: 3px;
   line-height: 1;
   text-transform: uppercase;
-  color: #3c3950;
+  color: var(--black-color);
   font-weight: 300;
   text-align: center;
 }
@@ -422,7 +422,7 @@
   letter-spacing: 3px;
   line-height: 1;
   text-transform: uppercase;
-  color: #3c3950;
+  color: var(--black-color);
   font-weight: 800;
   text-align: center;
 }
@@ -446,10 +446,6 @@
   color: var(--white-color);
   line-height: 1;
   font-size: 40px;
-}
-
-#slider {
-  position: relative;
 }
 
 .slider__arrow {
@@ -485,7 +481,7 @@
   font-size: 100px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #f4f6f7;
+  color: var(--gray-lighter-color);
   font-weight: 300;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -496,7 +492,7 @@
   padding: 50px 40px;
   font-size: 24px;
   line-height: 37px;
-  color: #f4f6f7;
+  color: var(--gray-lighter-color);
   font-weight: 300;
   font-family: "Source Sans Pro";
   margin: 10px 20px;
@@ -515,10 +511,6 @@
   background-color: #181828;
 }
 
-.footer__contact {
-  color: #94a4af;
-}
-
 .footer__paragraph {
   padding: 46px 0;
   margin-bottom: 10px;
@@ -527,10 +519,9 @@
 
 .footer__title {
   padding: 0 0 15px 0;
-  color: #94a4af;
   margin: 0 0 30px 0;
   font-weight: 700;
-  color: #feffff;
+  color: var(--white-color);
   font-size: 19px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -580,7 +571,7 @@ hr {
 }
 .footer .fa-circle {
   font-size: 0.4em;
-  color: #0992a8;
+  color: var(--blue-color);
 }
 
 .footer__useful-links {
@@ -765,7 +756,7 @@ input {
 }
 
 .color-blue {
-  color: #0690a6;
+  color: var(--blue-color);
 }
 
 .footer__after__info {
@@ -844,7 +835,6 @@ input {
 }
 
 .footer__text-info {
-  color: #92a1ad;
   margin: 16px 0 0 0;
 }
 

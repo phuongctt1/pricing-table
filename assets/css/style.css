@@ -141,7 +141,7 @@
   justify-content: center;
   gap: 20px;
   padding: 5px;
-  margin: 60px 0 44px 0;
+  margin: 10px 0 44px 0;
   cursor: pointer;
 }
 
@@ -153,9 +153,10 @@
   color: var(--dark-gray-color);
 }
 
-.slider__radios-item:hover {
+/* .slider__radios-item:hover {
   background-color: var(--blue-color);
-}
+} */
+ 
 
 .header {
   position: fixed;
@@ -309,6 +310,8 @@
   color: var(--blue-color);
 }
 .table__title-first {
+  width: 100%;
+  flex-shrink: 0;
   margin: 70px 0 30px;
   padding: 60px 0 30px;
   text-align: center;
@@ -703,7 +706,7 @@ input {
   color: #323544;
 }
 
-.fa-chevron-right {
+.chevron-right-custom {
   display: flex;
   align-items: center;
   font-size: 1em;

@@ -1,0 +1,19 @@
+@import url("./common.css");
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+.list-slide{
+    display: flex;
+    transition: 0.5s;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slider-active {
+    background-color: var(--blue-color);
+}
